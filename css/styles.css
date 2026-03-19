@@ -13,7 +13,7 @@
     --text-muted: #5e5a53;
     --text-bold: #c4bfb6;
     --accent: #d4a245;
-    --accent-subtle: rgba(212, 162, 69, 0.08);
+    --accent-subtle: rgba(69, 90, 212, 0.08);
     --border: #2a2823;
     --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
@@ -308,19 +308,22 @@ main {
 }
 
 .skill-dot {
+    background: linear-gradient(135deg, var(--accent) 60%, #f0e6d2 100%);
+    box-shadow: 0 0 4px 0 rgba(212, 162, 69, 0.2);
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: var(--accent);
     flex-shrink: 0;
 }
 
 .skill-dot.learning {
-    background: var(--text-secondary);
+    background: linear-gradient(135deg, #4a6a7a 60%, #b8d0e0 100%);
+    box-shadow: 0 0 4px 0 rgba(74, 106, 122, 0.2);
 }
 
 .skill-dot.beginner {
-    background: var(--text-muted);
+    background: linear-gradient(135deg, #eae7e2 60%, #d9d4cc 100%);
+    box-shadow: 0 0 4px 0 rgba(228, 228, 228, 0.15);
 }
 
 .ai-section {
